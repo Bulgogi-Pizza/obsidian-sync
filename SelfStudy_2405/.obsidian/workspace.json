@@ -143,8 +143,7 @@
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
-      "obsidian-importer:Open Importer": false
+      "command-palette:명령어 팔레트 열기": false
     }
   },
   "active": "10dcc2e14a199f7e",
