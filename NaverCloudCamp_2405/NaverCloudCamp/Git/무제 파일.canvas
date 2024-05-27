@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"cf70199e8579ea7f","type":"text","text":"Local Repository","x":-60,"y":-30,"width":185,"height":60},
+		{"id":"d173c897041f8712","type":"text","text":"Files","x":240,"y":-30,"width":120,"height":60},
+		{"id":"ac769e07e19f7d4b","type":"text","text":"백업 파일 목록","x":175,"y":-140,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"eeb43c65dbaa9f98","fromNode":"cf70199e8579ea7f","fromSide":"right","toNode":"d173c897041f8712","toSide":"left"},
+		{"id":"1802e73177c52315","fromNode":"d173c897041f8712","fromSide":"top","toNode":"ac769e07e19f7d4b","toSide":"bottom"}
+	]
+}

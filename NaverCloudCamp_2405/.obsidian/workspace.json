@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "b730937928915b43",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e664ced502482ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac25c5fbedfecf4d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "08f14210ff7a0b2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c29ed28050ba4c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a5130387110c9e0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e63de83aa366561f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6f25796bcee733a6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7f1547de78dd2a25",
+    "type": "split",
+    "children": [
+      {
+        "id": "2173b4f892b65065",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6b81a5170fec4eac",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2c12cddfa8e5b398",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3826092508c78682",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "03d4d84e710bae44",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "ac25c5fbedfecf4d",
+  "lastOpenFiles": [
+    "NaverCloudCamp/Git/무제 파일.canvas",
+    "NaverCloudCamp/Git/Git.md",
+    "NaverCloudCamp/JAVA/JAVA 기초.md",
+    "NaverCloudCamp/OT/OT.md",
+    "Welcome.md",
+    "NaverCloudCamp/Git",
+    "NaverCloudCamp/Github/무제 파일.canvas",
+    "NaverCloudCamp/Github/Git.md",
+    "NaverCloudCamp/Github",
+    "NaverCloudCamp/OT",
+    "NaverCloudCamp/JAVA",
+    "NaverCloudCamp",
+    "네이버 클라우드 캠프/Git/Git.md",
+    "Na/OT/OT.md",
+    "Na/JAVA/JAVA 기초.md",
+    "Na/Git/무제 파일.canvas",
+    "Na/Git/Git.md",
+    "Na/OT",
+    "Na/JAVA",
+    "Na/Git",
+    "Na",
+    "네이버 클라우드 캠프/JAVA/JAVA 기초.md",
+    "네이버 클라우드 캠프/Git/무제 파일.canvas",
+    "네이버 클라우드 캠프/OT/OT.md",
+    "무제 파일.md",
+    "네이버 클라우드 캠프/JAVA",
+    "네이버 클라우드 캠프/HTML/HTML 텍스트 요소.md",
+    "네이버 클라우드 캠프/HTML/HTML 기초.md",
+    "네이버 클라우드 캠프/HTML/Untitled.png",
+    "회사.md",
+    "기부 또는 후원 요청.md",
+    "네이버 클라우드 캠프/HTML/HTML.md",
+    "네이버 클라우드 캠프.md",
+    "출판 옵션 리서치(전통적 방식, 독립 출ᄑ.md",
+    "첫 책 출판하기.md",
+    "채용 공고 트래커.md",
+    "채용 공고.md",
+    "집 수리.md",
+    "주간 할 일 목록.md",
+    "제출 준비 또는 책 출판.md"
+  ]
+}
