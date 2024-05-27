@@ -490,3 +490,61 @@ HTML 코드 어느 부분에서든 사용 가능
 HTML에는 미리 예약된 몇몇 문자가 있고, 이러한 문자를 HTML 예약어(reserved characters)라고 부름
 
 이러한 HTML 예약어를 HTML 코드에서 사용하면, 웹 브라우저는 그것을 평소와는 다른 의미로 해석함
+따라서 HTML 예약어를 기존에 사용하던 의미 그대로 사용하기 위해 별도로 만든 문자셋을 엔티티(entity)라고 함
+
+### 엔티티의 형태
+
+&엔티티이름;
+또는
+&#엔티티숫자;
+
+~~~ html
+<p><p> 태그는 두 번째로 큰 제목을 나타내는 태그입니다.</p>
+
+<p>&lt;p&gt;태그는 단락을 나타내는 태그입니다.</p>
+~~~
+<p>&lt;p&gt;태그는 단락을 나타내는 태그입니다.</p>
+위의 예제처럼 HTML코드에서 사용된 꺾쇠괄호는 HTML 태그의 시작과 끝의 의미로 해석됨
+
+> [!warning] Important
+> 엔티티(entity)의 이름은 대소문자를 구분
+
+~~~html
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Entities</title>
+</head>
+
+<body>
+
+	<h1>발음 구별 기호</h1>
+	<p>j에 악센트가 있다는 발음 기호는 [j&#769;]입니다.</p> //j́
+
+</body>
+
+</html>
+~~~
+
+## 문자셋 (Character set)
+
+웹 브라우저가 HTML 문서를 정확하게 나타내기 위해서는 해당 문서가 어떠한 문자셋으로 저장되었는지를 알아야 함
+따라서 HTML 문서가 저장될 때 사용된 문자셋에 대한 정보를 head태그 내의 meta태그에 명시
+
+>[!info] Info
+>HTML4에서 UTF-8의 경우 : &lt;meta http-equiv="Content-Type" content="text/html;charset=UTF-8"&gt;
+
+>[!info] Info
+>HTML5에서 UTF-8의 경우 : &lt;meta charset="UTF-8"&gt;
+
+위의 두 예제는 해당 HTML 문서가 UTF-8 문자셋을 사용하여 저장되었음을 웹 브라우저에 알려줌
+
+### 문자셋의 종류
+
+현재 사용되는 대표적인 문자셋(character set)
+1. ASCII : 가장 처음 만들어진 문자셋, 127개의 영문자와 숫자
+2. ANSI : 윈도우즈에서 만든 문자셋, 총 256개의 문자 코드 지원
+3. ISO-8859-1 : 256개의 문자 코드를 지원하는 HTML4의 기본 문자셋
+4. UTF-8 : 세상에 있는 거의 모든 문자를 표현할 수 있는 유니코드 문자를 지원하는 HTML5의 기본 문자셋

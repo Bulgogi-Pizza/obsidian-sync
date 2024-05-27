@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML/HTML 텍스트 요소.md",
+                "file": "HTML/HTML 기본 요소.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               }
             }
           },
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HTML/HTML 텍스트 요소.md",
+                "file": "HTML/HTML 기본 요소.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HTML/HTML 텍스트 요소.md",
+                "file": "HTML/HTML 기본 요소.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML/HTML 텍스트 요소.md"
+                "file": "HTML/HTML 기본 요소.md"
               }
             }
           }
@@ -138,6 +138,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-importer:Open Importer": false,
       "switcher:퀵 스위처 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
@@ -148,12 +149,14 @@
   },
   "active": "10dcc2e14a199f7e",
   "lastOpenFiles": [
+    "HTML/HTML 텍스트 요소.md",
+    "HTML/HTML 기본 요소.md",
+    "HTML/무제 파일.md",
     "HTML/HTML 기초.md",
     "무제 파일.canvas",
     "2024-05-27.md",
     "Welcome.md",
     "HTML/Untitled.png",
-    "HTML/HTML 텍스트 요소.md",
     "HTML"
   ]
 }

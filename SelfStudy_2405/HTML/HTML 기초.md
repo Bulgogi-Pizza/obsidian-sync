@@ -3,11 +3,8 @@
 - <태그이름> // 시작 태그
 - </태그이름> // 종료 태그
 - 그러나, img, br, hr 등과 같이 시작 태그만을 가지는 태그를 빈 태그 (empty tag)라고 함
-
 ### 제목 (heading)
-
-h1 ~ h6
-
+&lt; h1 &gt; ~ &lt; h6 &gt;
 ### 단락 (paragraph)
 p
 
@@ -47,6 +44,18 @@ W3C (World Wide Web Consortium)에서 관리중인 웹 표준
 	</body>
 </html>
 ```
+
+<html>
+	<head>
+		<title>HTML 문서의 제목입니다.</title>
+	</head>
+
+	<body> 
+		<h1>제목 크기 1입니다.</h1>
+		<h2>제목 크기 2입니다.</h2>
+		<p>이 부분은 단락입니다.</p>
+	</body>
+</html>
 
 ## HTML 요소 구조
 
