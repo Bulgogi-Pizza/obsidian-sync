@@ -79,3 +79,23 @@ Windows OS -> ARM CPU
 
 같은 OS를 사용하지만 같은 기계어 파일을 다른 OS에서 사용하지 못하는 이유는?
 - CPU별 기계어가 다르기 때문
+
+### 객체지향 언어의 등장
+- C언어의 몸집이 커지고, 코드를 좀 더 조직적이고 체계적으로 관리하기 위해 Classification(분류, Class) 기능을 탑재한 C++을 만듦.
+- 당연히 C보다는 속도가 느림 하지만 그 관리의 용이성이 있음
+
+> [!question] 질문
+> C보다 C++이 더 느리다고 하셨고, 전에 언어가 결국 기계어로 바뀌면 속도는 같다고 하셨는데 어디서 차이가 나는건지?
+
+### JavaScript
+
+- 자바 문법을 빌려와서 자바보다는 가벼운 문법을 붙임
+- JavaScript Engine 사용 (Interpreter)
+- chrome에는 V8 JS Engine이 내장되어 있음
+- chrome에는 HTML 렌더링 엔진으로 Blink가 내장되어 있음
+- Blink는 Webkit을 개선해서 만든 HTML 렌더링 엔진임
+- Webkit 엔진은 Safari 브라우저에 내장되어 있었음, 그걸 가져가서 Blink를 만든 것
+- Webkit 엔진은 리눅스의 K Browser 에서 가져옴
+- JavaScript를 데스크톱에서 만들기 위한 노력
+- V8 엔진을 오픈소스로 공개함 그것을 데스크톱에서 바로 쓸 수 있도록 기능을 추가하여 만듦 -> Node.js
+- Node.js 로 \*.js 파일 오픈 가능
