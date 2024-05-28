@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LoveOfLearning/HTML/HTML 기본 요소.md",
+                "file": "NaverCloudCamp/Git/Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LoveOfLearning/HTML/HTML 기본 요소.md",
+                "file": "NaverCloudCamp/Git/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LoveOfLearning/HTML/HTML 기본 요소.md",
+                "file": "NaverCloudCamp/Git/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LoveOfLearning/HTML/HTML 기본 요소.md"
+                "file": "NaverCloudCamp/Git/Git.md"
               }
             }
           }
@@ -166,6 +166,8 @@
   },
   "active": "ac25c5fbedfecf4d",
   "lastOpenFiles": [
+    "NaverCloudCamp/Git/무제 파일.canvas",
+    "LoveOfLearning/HTML/HTML 기본 요소.md",
     "LoveOfLearning/HTML/Projects/Practice_003_basic_elements.html",
     "LoveOfLearning/HTML/HTML 텍스트 요소.md",
     "LoveOfLearning/HTML/Projects/Practice_002_text_elements.html",
@@ -174,7 +176,6 @@
     "LoveOfLearning/HTML/Projects/Practice_001_text_",
     "LoveOfLearning/HTML/HTML 기초.md",
     "LoveOfLearning/HTML/Projects/Practice_001_basic_struct.html",
-    "LoveOfLearning/HTML/HTML 기본 요소.md",
     "NaverCloudCamp/JAVA/JAVA 기초.md",
     "LoveOfLearning/HTML/Projects",
     "NaverCloudCamp/커리큘럼 정리.canvas",
@@ -184,7 +185,6 @@
     "SelfStudy_2405",
     "LoveOfLearning/HTML/Untitled.png",
     "LoveOfLearning/JAVA/자바 개요.md",
-    "LoveOfLearning/JAVA/Projects/Practice_000_HelloWorld/src",
     "LoveOfLearning/HTML/무제 파일.md",
     "JAVA/자바 개요.md",
     "New drawer.md",
@@ -194,7 +194,6 @@
     "HTML/HTML 기본 요소.md",
     "HTML/HTML 기초.md",
     "HTML/무제 파일.md",
-    "NaverCloudCamp/Git/무제 파일.canvas",
     "NaverCloudCamp/Git/Git.md",
     "NaverCloudCamp/OT/OT.md",
     "Welcome.md",
