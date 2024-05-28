@@ -13,9 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NaverCloudCamp/JAVA/JAVA 기초.md",
+                "file": "LoveOfLearning/HTML/HTML 기본 요소.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "2a0b6b6baf52ddf9",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "NaverCloudCamp/커리큘럼 정리.canvas",
+                "viewState": {
+                  "x": -78.32762950491372,
+                  "y": 642.2394606082536,
+                  "zoom": -1.168798828125
+                }
               }
             }
           }
@@ -85,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NaverCloudCamp/JAVA/JAVA 기초.md",
+                "file": "LoveOfLearning/HTML/HTML 기본 요소.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NaverCloudCamp/JAVA/JAVA 기초.md",
+                "file": "LoveOfLearning/HTML/HTML 기본 요소.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NaverCloudCamp/JAVA/JAVA 기초.md"
+                "file": "LoveOfLearning/HTML/HTML 기본 요소.md"
               }
             }
           }
@@ -151,25 +166,27 @@
   },
   "active": "ac25c5fbedfecf4d",
   "lastOpenFiles": [
+    "LoveOfLearning/HTML/Projects/Practice_003_basic_elements.html",
+    "LoveOfLearning/HTML/HTML 텍스트 요소.md",
+    "LoveOfLearning/HTML/Projects/Practice_002_text_elements.html",
+    "LoveOfLearning/HTML/Projects/Practice_001_text_elements.html",
+    "LoveOfLearning/HTML/Projects/Practice_001_text_elements",
+    "LoveOfLearning/HTML/Projects/Practice_001_text_",
+    "LoveOfLearning/HTML/HTML 기초.md",
+    "LoveOfLearning/HTML/Projects/Practice_001_basic_struct.html",
+    "LoveOfLearning/HTML/HTML 기본 요소.md",
+    "NaverCloudCamp/JAVA/JAVA 기초.md",
+    "LoveOfLearning/HTML/Projects",
+    "NaverCloudCamp/커리큘럼 정리.canvas",
+    "NaverCloudCamp/커리큘럼 정리.md",
     "SelfStudy_2405/NaverCloudCamp",
     "SelfStudy_2405/LoveOfLearning",
     "SelfStudy_2405",
     "LoveOfLearning/HTML/Untitled.png",
-    "LoveOfLearning/HTML/HTML 텍스트 요소.md",
-    "LoveOfLearning/HTML/HTML 기본 요소.md",
-    "LoveOfLearning/HTML/HTML 기초.md",
     "LoveOfLearning/JAVA/자바 개요.md",
     "LoveOfLearning/JAVA/Projects/Practice_000_HelloWorld/src",
-    "LoveOfLearning/JAVA/Projects/Practice_000_HelloWorld",
-    "LoveOfLearning/JAVA/Projects",
-    "LoveOfLearning/JAVA",
     "LoveOfLearning/HTML/무제 파일.md",
-    "LoveOfLearning/HTML",
-    "LoveOfLearning",
-    "무제 폴더",
     "JAVA/자바 개요.md",
-    "NaverCloudCamp/JAVA/JAVA 기초.md",
-    "무제 파일.canvas",
     "New drawer.md",
     "Test.canvas",
     "HTML/Untitled.png",
@@ -177,7 +194,6 @@
     "HTML/HTML 기본 요소.md",
     "HTML/HTML 기초.md",
     "HTML/무제 파일.md",
-    "JAVA/Projects/Practice_000_HelloWorld/src",
     "NaverCloudCamp/Git/무제 파일.canvas",
     "NaverCloudCamp/Git/Git.md",
     "NaverCloudCamp/OT/OT.md",
@@ -192,7 +208,6 @@
     "네이버 클라우드 캠프/JAVA/JAVA 기초.md",
     "네이버 클라우드 캠프/Git/무제 파일.canvas",
     "네이버 클라우드 캠프/OT/OT.md",
-    "무제 파일.md",
     "네이버 클라우드 캠프/HTML/HTML 텍스트 요소.md",
     "네이버 클라우드 캠프/HTML/HTML 기초.md",
     "네이버 클라우드 캠프/HTML/Untitled.png"

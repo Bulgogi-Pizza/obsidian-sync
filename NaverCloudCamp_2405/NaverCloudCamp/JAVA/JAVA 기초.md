@@ -81,6 +81,7 @@ Windows OS -> ARM CPU
 - CPU별 기계어가 다르기 때문
 
 ### 객체지향 언어의 등장
+
 - C언어의 몸집이 커지고, 코드를 좀 더 조직적이고 체계적으로 관리하기 위해 Classification(분류, Class) 기능을 탑재한 C++을 만듦.
 - 당연히 C보다는 속도가 느림 하지만 그 관리의 용이성이 있음
 
@@ -99,3 +100,88 @@ Windows OS -> ARM CPU
 - JavaScript를 데스크톱에서 만들기 위한 노력
 - V8 엔진을 오픈소스로 공개함 그것을 데스크톱에서 바로 쓸 수 있도록 기능을 추가하여 만듦 -> Node.js
 - Node.js 로 \*.js 파일 오픈 가능
+- 인터프리터 -> 기계어 번역 후 CPU로 돌리는 것 (컴파일)이 아닌 소스코드를 바로 사용
+- 자바 = 인터프리터 방식과 컴파일 방식이 섞인 하이브리드 방식
+
+### Hybrid 방식
+
+- Compile 방식과 Interprete 방식이 섞임
+- \*.java --compile-> \*.class (가상의 기계어, 기계어와 유사, 중간 언어) {Bytecode} => P-code
+- Bytecode Interpreter (JVM, Java Virtual Machine)를 사용해서 \*.class 파일을 로드
+
+### Hybrid 방식을 취한 이유
+
+- 컴파일 방식의 단점
+	- 각 OS마다 기계어를 달리 만들어야(Compile) 함
+- 인터프리터 방식의 단점
+	- 실행할 때 마다 소스 파일 필요 (소스 파일이 공개됨)
+	- 실행할 때마다 문법 검사 -> 실행 속도가 느림
+	- 해당 문장을 실행하기 전까지는 문법 오류 체크가 안됨
+>[!question] 질문
+>결국 JVM도 OS 별로 개발을 해야 하지 않나요?
+>C언어도 Write Once, Run Anywhere!이 적용되지 않나요?
+- Hybrid 방식의 이점
+	- \*.class파일은 기계어와 흡사하기 때문에 source를 실행하는 것 보다 실행속도가 빠름
+	- .java --compile-> .class로 한 번만 컴파일 하면 여러 OS에서 실행할 수 있음
+
+### Java 컴파일과 실행
+
+- Hello.java 를 window, linux, macos용 컴파일러에서 컴파일해도 결국 나오는 Hello.class (Bytecode, P-Code)는 같음
+- 5명의 팀이 일한다고 쳤을 때, window를 쓰든 linux를 쓰든 같은 코드로 코딩 가능
+
+### Java 도구
+
+- JDK (Java Development Kit)
+	- JRE (Java Runtime Environment)
+		- JVM
+		- 실행 시 사용할 도구
+	- 개발 관련 도구
+		- 컴파일러
+		- 디버거
+		- 프로파일러
+		- 문서 생성기
+
+- JDK를 설치하면 JRE가 자동으로 포함됨, 그 내부의 JVM 역시 포함됨
+
+- 제품 분류
+	- Java SE (Standard Edition)
+		- JRE (Desktop 기능 제외)
+		- Server JRE
+		- ==**JDK**==
+	- Java EE (Enterprise Edition)
+		- **==Web Application Development Kit==**
+		- 분산 ADK
+		- Resource Management Kit
+		- Web Service Development Kit
+		- etc.
+		- +
+		- ==**Server for testing**==
+	- <del>Java ME (Micro Edition) (폭망)</del>
+		- 대안 기술이 많다 (Android Things, SmartThings 등)
+		- Embedded Application Development Kit
+
+### Enterprise 용 App. 실행 요건
+
+1. 다중 사용자가 이용
+	- Web App. 제작 도구
+		- Servlet
+		- JSP
+		- JSTL
+		- EL
+		- <del>JSF 폭망</del> JavaScript 도구가 활성화됐기 때문
+
+사용자1 -> WebBrowser --요청-> Web Server --실행-> App
+사용자2 -> WebBrowser --요청-> Web Server ...
+
+App - Web Server가 실행할 수 있는 App. 개발 도구 제공
+
+2. App의 분산 배치 -> 분산 컴포넌트 제작 도구
+	- X 다중 사용자 -> 서버 (회계, 인사, 결재, 주문) 
+	- O 다중 사용자 -> 회계서버, 인사서버, 결재서버, 주문서버
+	
+	- 서버를 하나로 묶어 둘 것이 아니라 각 서버를 나눠두면 하나의 서버가 다운 되어도 문제가 커지지 않음
+	- 다만 각 서버간 통신을 해야 하는 경우가 생기기 때문에 한 시스템에서 다른 시스템의 코드를 실행해야함 -> 코드를 작성할 때 다른 컴퓨터에서 사용할 수 있게 만들어야 함 -> 분산 컴포넌트 제작 기술 (Distribution Component)
+	- 분산 컴포넌트 제작 기술
+		- EJB
+		- WebService
+		- REST API
