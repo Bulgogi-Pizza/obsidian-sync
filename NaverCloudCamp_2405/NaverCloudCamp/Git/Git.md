@@ -35,8 +35,4 @@ git push
 git pull
 - 서버 저장소의 변경 내용 가져오기
 
-build.gradle
-- 
-
-Local Repository
 

@@ -1,3 +1,4 @@
+<hr>
 ## HTML 태그
 
 - <태그이름> // 시작 태그
@@ -7,7 +8,7 @@
 <p>&lt; h1 &gt; ~ &lt; h6 &gt;</p>
 ### 단락 (paragraph)
 <p>&lt;p&gt;</p>
-
+<hr>
 ## HTML 버전
 
 - HTML 1.0 (1991) - Tim Berners-Lee가 발표한 최초의 HTML
@@ -23,6 +24,7 @@ W3C (World Wide Web Consortium)에서 관리중인 웹 표준
 
 - HTML, CSS, DOM, SVG, XHTML, XML
 
+<hr>
 ## HTML 기본 구조
 
 ```html
@@ -56,7 +58,7 @@ W3C (World Wide Web Consortium)에서 관리중인 웹 표준
 		<p>이 부분은 단락입니다.</p>
 	</body>
 </html>
-
+<hr>
 ## HTML 요소 구조
 
 HTML 요소(element)는 여러 속성을 가질 수 있으며, 이러한 속성(attribute)은 해당 요소에 대한 추가적인 정보를 제공
