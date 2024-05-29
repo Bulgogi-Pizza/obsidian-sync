@@ -4,34 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "8e664ced502482ba",
+        "id": "27b071bfe452a0dd",
         "type": "tabs",
         "children": [
           {
-            "id": "ac25c5fbedfecf4d",
+            "id": "c1f7600564282be5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NaverCloudCamp/Git/Git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a0b6b6baf52ddf9",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "NaverCloudCamp/커리큘럼 정리.canvas",
-                "viewState": {
-                  "x": -78.32762950491372,
-                  "y": 642.2394606082536,
-                  "zoom": -1.168798828125
-                }
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -100,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NaverCloudCamp/Git/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NaverCloudCamp/Git/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,12 +118,19 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "NaverCloudCamp/Git/Git.md"
-              }
+              "state": {}
+            }
+          },
+          {
+            "id": "d6c3a4dcde75eca3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -164,25 +150,32 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ac25c5fbedfecf4d",
+  "active": "c1f7600564282be5",
   "lastOpenFiles": [
-    "NaverCloudCamp/Git/무제 파일.canvas",
-    "LoveOfLearning/HTML/HTML 기본 요소.md",
-    "LoveOfLearning/HTML/Projects/Practice_003_basic_elements.html",
+    "NaverCloudCamp/JAVA/JAVA 기초.md",
+    "NaverCloudCamp/커리큘럼 정리.canvas",
+    "나는 신입.md",
+    "무제 파일.canvas",
     "LoveOfLearning/HTML/HTML 텍스트 요소.md",
+    "Excalidraw/Drawing 2024-05-29 21.05.56.excalidraw.md",
+    "Excalidraw",
+    "NaverCloudCamp/JAVA/JavaScript 등장과 역사.md",
+    "NaverCloudCamp/OT/OT.md",
+    "NaverCloudCamp/Git/무제 파일.canvas",
+    "Pasted image 20240529144652.png",
+    "LoveOfLearning/HTML/HTML 기초.md",
+    "LoveOfLearning/HTML/HTML 기본 요소.md",
+    "NaverCloudCamp/Git/Git.md",
+    "LoveOfLearning/HTML/Projects/Practice_003_basic_elements.html",
     "LoveOfLearning/HTML/Projects/Practice_002_text_elements.html",
     "LoveOfLearning/HTML/Projects/Practice_001_text_elements.html",
     "LoveOfLearning/HTML/Projects/Practice_001_text_elements",
     "LoveOfLearning/HTML/Projects/Practice_001_text_",
-    "LoveOfLearning/HTML/HTML 기초.md",
     "LoveOfLearning/HTML/Projects/Practice_001_basic_struct.html",
-    "NaverCloudCamp/JAVA/JAVA 기초.md",
     "LoveOfLearning/HTML/Projects",
-    "NaverCloudCamp/커리큘럼 정리.canvas",
     "NaverCloudCamp/커리큘럼 정리.md",
     "SelfStudy_2405/NaverCloudCamp",
     "SelfStudy_2405/LoveOfLearning",
-    "SelfStudy_2405",
     "LoveOfLearning/HTML/Untitled.png",
     "LoveOfLearning/JAVA/자바 개요.md",
     "LoveOfLearning/HTML/무제 파일.md",
@@ -194,8 +187,6 @@
     "HTML/HTML 기본 요소.md",
     "HTML/HTML 기초.md",
     "HTML/무제 파일.md",
-    "NaverCloudCamp/Git/Git.md",
-    "NaverCloudCamp/OT/OT.md",
     "Welcome.md",
     "NaverCloudCamp/Github/무제 파일.canvas",
     "NaverCloudCamp/Github/Git.md",
@@ -206,9 +197,6 @@
     "Na/Git/Git.md",
     "네이버 클라우드 캠프/JAVA/JAVA 기초.md",
     "네이버 클라우드 캠프/Git/무제 파일.canvas",
-    "네이버 클라우드 캠프/OT/OT.md",
-    "네이버 클라우드 캠프/HTML/HTML 텍스트 요소.md",
-    "네이버 클라우드 캠프/HTML/HTML 기초.md",
     "네이버 클라우드 캠프/HTML/Untitled.png"
   ]
 }

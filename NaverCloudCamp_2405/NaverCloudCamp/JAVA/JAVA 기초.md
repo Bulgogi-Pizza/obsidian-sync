@@ -1,27 +1,28 @@
-- S/W
+# S/W의 개념과 종류
 
 사용자 <-(입출력)-> 컴퓨터 with "[CPU, RAM, HDD]" <<< H/W and "[명령어 + 데이터]" <<< S/W
 
-SW
+### SW 
 
 - 시스템 S/W (H/W 제어) ex) OS(운영체제), 드라이버, 임베디드
 - 응용 S/W MS-Word, Photoshop, LOL 등
 
-응용 S/W
+### 응용 S/W 
 
 - stand alone S/W (외부 S/W의 도움 없이 실행) ex) MS-Word, Photoshop, Excel, PPT 등
 - Client/Server S/W (외부 S/W와 통신 필요) ex) LOL, OneDrive, 카카오톡 등
 
-Client/Server S/W
+### Client/Server S/W 
 
 - 설치형 S/W ex) LOL, 카카오톡
 - 비설치형 S/W ex) gmail, 네이버 메일, Youtube 등 Web Browser를 통해 실행 -> Web Application
 
-UNIX / LINUX
+>[!info] Info
+>UNIX / LINUX
 iOS - UNIX 기반
 Android - LINUX 기반
 
-Web Application
+### Web Application
 
 - Web Browser로 실행 ↔ Web Server ↔ (실행, HTML) 우리가 만들 것 = “App.” (JAVA로 작성)
     - HTML
@@ -87,6 +88,9 @@ Windows OS -> ARM CPU
 
 > [!question] 질문
 > C보다 C++이 더 느리다고 하셨고, 전에 언어가 결국 기계어로 바뀌면 속도는 같다고 하셨는데 어디서 차이가 나는건지?
+
+>[!info] 답변
+>컴파일러 최적화와 기계어 최적화 차이, 그리고 메소드 방식과 절차형 방식의 차이
 
 ### JavaScript
 
@@ -185,3 +189,122 @@ App - Web Server가 실행할 수 있는 App. 개발 도구 제공
 		- EJB
 		- WebService
 		- REST API
+
+Java Formatting
+- font : D2Coding
+- format setting : "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml"
+
+$ javac -encoding UTF-8 Hello.java
+-encoding ~~~ 소스 코드가 어떤 규칙에 따라 작성됐는지 알려줌
+* jdk 17은 자동으로 지정이 안돼서 오류가 뜨고, 21 버전은 자동으로 지정됨
+
+$ javac -d 폴더 Hello.java
+-d 폴더 -> 컴파일 결과 파일을 둘 폴더를 지정
+
+$ java -(classpath or cp) 경로 Hello
+-classpath 경로 -> 클래스 파일이 있는 위치를 알려줌
+
+$ javac -target 17 Hello.java
+	-> Hello.class가 17버전 이상에서 실행 가능 JVM21 ok, JVM 17 ok, JVM 11 fail
+
+### 윈도우에서 컴파일 할 때 문자집합 오류가 발생하는 이유
+
+Windows는 "MS949" 규칙에 따라 텍스트를 읽고 쓰는데, VSCode에서 저장하면 UTF-8 형식으로 문자를 저장하기 때문, 그래서 Windows에서 컴파일 할 때에는 "MS949" 규칙에 따라 저장되었을 것이라 착각하고 오류가 생김
+
+### 개발 관리
+
+App.1 --
+
+App.2
+
+### Git 저장소와 프로젝트 폴더
+
+1. Case 1
+	저장소/
+	ㅣ
+	ㅏ 프로젝트 A
+	ㅏ 프로젝트 B
+
+버전은 저장소 단위로 관리되기 때문에 프로젝트 단위로 관리할 경우 좋지 않은 방식
+
+2. Case 2
+	저장소/
+	ㅣ
+	ㅏ 메인 프로젝트 A
+	ㅏ 서브 프로젝트 1
+	ㅏ 서브 프로젝트 2
+	.
+	.
+	.
+
+그래서 이렇게 저장하는 경우가 있고 대부분은 Case 3 를 따름
+
+3. Case 3
+	저장소 (프로젝트 A)/
+	ㅣ
+	ㅏ src
+	ㅏ bin
+
+	저장소 (프로젝트 B)/
+	ㅣ
+	ㅏ src
+	ㅏ bin
+
+### Build
+<quote>소스파일을 Application으로 제작하는 과정</quote>
+
+1. Compile
+2. Link
+3. Test
+4. Packaging
+5. Deploy
+
+컴파일 -> API 문서 생성
+
+빌드 도구
+-> 빌드를 관리하는 도구
+- Ant 
+- Maven 
+- Gradle
+
+### Build Tool and JDK
+- source file --javac, javadoc--> 
+- compile -> \*.class, API --단위테스트-> 
+- Test 결과 문서
+
+	- build tool -> javac, javadoc
+
+Ant -> build.xml
+Maven -> pom.xml
+Gradle -> build.gradle
+
+프로젝트 폴더 내에 pom.xml, build.gradle 둘 다 있다? -> Maven Gradle 둘 다 사용
+
+Maven 표준 프로젝트 디렉토리로 구성하기
+
+$gradle init
+
+build script file
+Domain-Specific Language (DSL) (특정 영역에 사용되는 언어)
+- Groovy (we use it)
+- Kotlin
+
+### Gradle Project 디렉토리 구조
+myapp/ <-- root project 디렉토리
+ㅣ
+ㅏ app/ <-- main project 디렉토리
+ㅣ    ㅏ src/
+ㅣ    ㅏ build.gradle <-- main project의 빌드 명세서
+ㅣ
+ㅏ gradle/ <-- gradle이 설치 안된 경우 자동으로 설치해주는 도구
+ㅣ    ㅏ wrapper/
+ㅣ    ㅏ libs.versions.toml <-- 의존 라이브러리 버전 정보
+ㅣ
+ㅏ gradlew (linux, unix)  --> ㅣGradle이 로컬 컴퓨터에 설치 안 된 경우 사용
+ㅏ gradle.bat (window)  --> ㅣ할 수 있는 도구, 자동으로 설치하여 실행한다
+ㅏ settings.gradle <-- Gradle 메인 설정
+ㅏ .gitignore <-- GIT ignore 파일
+ㅏ .gitattributers <-- GIT 보조 설정 파일
+
+gradle clean : build 내용 삭제
+gradle build : gradle 빌드하기
