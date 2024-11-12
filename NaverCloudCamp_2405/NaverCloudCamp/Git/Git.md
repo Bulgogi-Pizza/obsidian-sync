@@ -12,7 +12,7 @@ git
 - git clone 주소 (github 주소 내 파일 복사)
 - git pull (repository 폴더 내에서 업데이트 된 사항만 가져옴)
 
-github,com --운영-> Git Server [bitcamp-study] <-저장소(Repository; Repo.)--
+github,com --운영-> Git Server \[bitcamp-study] <-저장소(Repository; Repo.)--
 
 개발자 --사용-> Git Client --서비스 이용-> Git Server
 

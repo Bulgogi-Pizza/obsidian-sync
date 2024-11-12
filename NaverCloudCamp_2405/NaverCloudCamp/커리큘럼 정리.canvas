@@ -24,7 +24,7 @@
 		{"id":"574a607e6522a28e","type":"text","text":"Web Browser\n\n- HTML\n- CSS\n- JavaScript\n- Image","x":-1483,"y":766,"width":196,"height":203},
 		{"id":"dc2592c356b5a1ab","type":"file","file":"LoveOfLearning/JAVA/자바 개요.md","x":-340,"y":1111,"width":400,"height":220},
 		{"id":"1c1a698866714aaf","type":"text","text":"JavaScript","x":-107,"y":1007,"width":167,"height":60},
-		{"id":"dfaa984f18057f23","type":"file","file":"NaverCloudCamp/JAVA/JAVA 기초.md","x":-340,"y":1426,"width":400,"height":223},
+		{"id":"dfaa984f18057f23","type":"file","file":"NaverCloudCamp/Java/Java 기초.md","x":-340,"y":1426,"width":400,"height":223},
 		{"id":"14af7fe1fe294cce","x":-298,"y":807,"width":316,"height":120,"type":"text","text":"# Java\n\"Write Once, Run Anywhere!\""},
 		{"id":"537b8c36327b3047","x":238,"y":677,"width":291,"height":59,"type":"text","text":"Hybrid (Compile + Interprete)"},
 		{"id":"a772d5e871a87eba","x":718,"y":859,"width":180,"height":196,"type":"text","text":"개발 관련 도구\n- 컴파일러\n- 디버거\n- 프로파일러\n- 문서생성기"},

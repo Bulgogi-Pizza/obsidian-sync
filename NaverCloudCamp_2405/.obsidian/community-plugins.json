@@ -2,5 +2,8 @@
   "obsidian-git",
   "obsidian-importer",
   "obsidian-excalidraw-plugin",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "obsidian-reminder-plugin",
+  "calendar",
+  "obsidian-tasks-plugin"
 ]

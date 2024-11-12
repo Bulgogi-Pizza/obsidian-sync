@@ -4,15 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "27b071bfe452a0dd",
+        "id": "d291ebca9cabca9d",
         "type": "tabs",
         "children": [
           {
-            "id": "c1f7600564282be5",
+            "id": "f8ef173ed14f78b4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "취준/웹 백엔드/필요 역량.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "필요 역량"
             }
           }
         ]
@@ -35,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
             }
           },
           {
@@ -50,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "검색"
             }
           },
           {
@@ -58,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -81,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "NaverCloudCamp/JS/JavaScript 01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "JavaScript 01의 백링크"
             }
           },
           {
@@ -97,9 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "NaverCloudCamp/JS/JavaScript 01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "JavaScript 01의 나가는 링크"
             }
           },
           {
@@ -110,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -118,7 +138,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "취준/웹 백엔드/필요 역량.md"
+              },
+              "icon": "lucide-list",
+              "title": "필요 역량 개요"
             }
           },
           {
@@ -126,77 +150,108 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "4ff0199e072cc40d",
+            "type": "leaf",
+            "state": {
+              "type": "reminder-list",
+              "state": {},
+              "icon": "clock",
+              "title": "Reminders"
+            }
+          },
+          {
+            "id": "2fc672b14315ee69",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 243.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:퀵 스위처 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
+      "switcher:퀵 스위처 열기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
       "obsidian-importer:Open Importer": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "publish:변경사항 출판": false
     }
   },
-  "active": "c1f7600564282be5",
+  "active": "f8ef173ed14f78b4",
   "lastOpenFiles": [
-    "NaverCloudCamp/JAVA/JAVA 기초.md",
-    "NaverCloudCamp/커리큘럼 정리.canvas",
-    "나는 신입.md",
+    "취준/DevOps/필요 역량.md",
+    "취준/웹 백엔드/필요 역량.md",
+    "취준/임베디드/필요 역량.md",
+    "NaverCloudCamp/TeamProject/작업 일기.md",
+    "NaverCloudCamp/TeamProject/채팅 앱.md",
+    "NaverCloudCamp/Spring/Spring Security.md",
+    "NaverCloudCamp/TeamProject/App.js 로직 변경.md",
+    "취준/임베디드/드라이버.md",
+    "취준/임베디드/MCU.md",
+    "취준/임베디드/DSP.md",
+    "취준/임베디드/펌웨어.md",
+    "취준/임베디드/통신.md",
+    "NaverCloudCamp/React/React 컴포넌트.md",
+    "무제 파일.md",
+    "LoveOfLearning/정보처리기사/2024년 1회 실기 복원 문제.md",
+    "취준/응용SW.md",
+    "취준/무제 파일.md",
+    "취준/DevOps",
+    "취준/웹 백엔드",
+    "취준/응용SW",
+    "취준/임베디드",
+    "NaverCloudCamp/JS/Webpack.md",
+    "취준",
+    "모듈 번들러.md",
+    "NaverCloudCamp/React/환경 변수.md",
+    "NaverCloudCamp/React/Socket.md",
     "무제 파일.canvas",
-    "LoveOfLearning/HTML/HTML 텍스트 요소.md",
-    "Excalidraw/Drawing 2024-05-29 21.05.56.excalidraw.md",
-    "Excalidraw",
-    "NaverCloudCamp/JAVA/JavaScript 등장과 역사.md",
-    "NaverCloudCamp/OT/OT.md",
+    "NaverCloudCamp/Java/Java 기초 3.md",
+    "NaverCloudCamp/Java/Java 문법들.md",
+    "NaverCloudCamp/Java/Java I.O..md",
+    "NaverCloudCamp/Java/myapp01.md",
+    "Todo/공부.md",
+    "NaverCloudCamp/Docker",
+    "Pasted image 20240611110932.png",
+    "Pasted image 20240611110750.png",
+    "Pasted image 20240603171333.png",
+    "NaverCloudCamp/커리큘럼 정리.canvas",
+    "무제 파일 1.canvas",
+    "NaverCloudCamp/JS",
+    "LoveOfLearning/정보처리기사/무제 폴더",
+    "LoveOfLearning/정보처리기사",
+    "NaverCloudCamp/TeamProject",
+    "Pasted image 20240903212402.png",
+    "Pasted image 20240903212315.png",
+    "Pasted image 20240818203957.png",
+    "Pasted image 20240818203817.png",
+    "Pasted image 20240818191439.png",
+    "Pasted image 20240818182508.png",
+    "Pasted image 20240813120454.png",
     "NaverCloudCamp/Git/무제 파일.canvas",
-    "Pasted image 20240529144652.png",
-    "LoveOfLearning/HTML/HTML 기초.md",
-    "LoveOfLearning/HTML/HTML 기본 요소.md",
-    "NaverCloudCamp/Git/Git.md",
-    "LoveOfLearning/HTML/Projects/Practice_003_basic_elements.html",
-    "LoveOfLearning/HTML/Projects/Practice_002_text_elements.html",
-    "LoveOfLearning/HTML/Projects/Practice_001_text_elements.html",
-    "LoveOfLearning/HTML/Projects/Practice_001_text_elements",
-    "LoveOfLearning/HTML/Projects/Practice_001_text_",
-    "LoveOfLearning/HTML/Projects/Practice_001_basic_struct.html",
-    "LoveOfLearning/HTML/Projects",
-    "NaverCloudCamp/커리큘럼 정리.md",
-    "SelfStudy_2405/NaverCloudCamp",
-    "SelfStudy_2405/LoveOfLearning",
-    "LoveOfLearning/HTML/Untitled.png",
-    "LoveOfLearning/JAVA/자바 개요.md",
-    "LoveOfLearning/HTML/무제 파일.md",
-    "JAVA/자바 개요.md",
-    "New drawer.md",
     "Test.canvas",
-    "HTML/Untitled.png",
-    "HTML/HTML 텍스트 요소.md",
-    "HTML/HTML 기본 요소.md",
-    "HTML/HTML 기초.md",
-    "HTML/무제 파일.md",
-    "Welcome.md",
     "NaverCloudCamp/Github/무제 파일.canvas",
-    "NaverCloudCamp/Github/Git.md",
-    "네이버 클라우드 캠프/Git/Git.md",
-    "Na/OT/OT.md",
-    "Na/JAVA/JAVA 기초.md",
     "Na/Git/무제 파일.canvas",
-    "Na/Git/Git.md",
-    "네이버 클라우드 캠프/JAVA/JAVA 기초.md",
-    "네이버 클라우드 캠프/Git/무제 파일.canvas",
-    "네이버 클라우드 캠프/HTML/Untitled.png"
+    "네이버 클라우드 캠프/Git/무제 파일.canvas"
   ]
 }

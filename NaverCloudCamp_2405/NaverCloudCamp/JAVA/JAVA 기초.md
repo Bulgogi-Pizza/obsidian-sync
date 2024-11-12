@@ -57,7 +57,7 @@ Web Server (Tomcat 제품 사용) --실행-> Web App --데이터 저장-> DBMS (
 - 컴퓨터가 해야 할 일을 명시
 - = Computer Program
 
-## CPU, 기계어, OS 
+### CPU, 기계어, OS 
 
 Windows OS -> Intel CPU
 Linux OS -> Intel CPU
@@ -190,7 +190,7 @@ App - Web Server가 실행할 수 있는 App. 개발 도구 제공
 		- WebService
 		- REST API
 
-Java Formatting
+### Java Formatting
 - font : D2Coding
 - format setting : "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml"
 
@@ -308,3 +308,445 @@ myapp/ <-- root project 디렉토리
 
 gradle clean : build 내용 삭제
 gradle build : gradle 빌드하기
+
+javac -d bin Hello.java
+
+ㅏ Hello.java
+ㅏ bin/
+ㅣ  ㅏ Hello.class
+
+java -classpath(or -cp) bin Hello
+
+real : .java --> .class --> Bytecode Player --> OS
+mean : Java --> Bytecode --> JVM --> OS
+
+>[!todo] 독학
+>하버드 CS50 ~ 강의 듣기
+
+### 프로그래밍 언어의 발전 과정
+
+1. 명령문
+~~
+~~
+~~
+~~
+~~
+~~
+~~
+
+코드를 관리하기 쉽게 묶는다
+
+2. Function
+f(){
+~~
+~~
+~~
+}
+f(){
+~~
+~~
+~~
+}
+f(){
+~~
+~~
+~~
+}
+
+Function을 관리하기 쉽게 묶는다
+
+3. Class
+Class A{
+	f(){
+	
+	}
+	f(){
+	
+	}
+}
+Class B{
+	f(){
+	
+	}
+	f(){
+	
+	}
+}
+
+클래스를 관리하기 쉽게 분류
+
+4. package
+ㅏ a/
+ㅣ  ㅏ A
+ㅣ  ㅏ B
+ㅣ
+ㅏ c/
+ㅣ  ㅏ D
+ㅣ  ㅏ E
+
+5. module
+
+A\[package A, package B]
+C\[package C, package D]
+
+### 소스파일과 클래스블록, 클래스 파일의 관계
+
+C - Source file n개 컴파일 --링크-> 1개의 목적파일
+Java - Source file n개 컴파일 ----> n개의 클래스 파일
+
+>[!question] 질문
+>왜 classes는 java -> main, src는 main -> java??
+
+test.java 파일 밑에
+class A
+class B
+class C
+선언 후 컴파일하면
+A.class B.class C.class 파일이 생성됨
+-> 1개의 파일, N개의 class -> N개의 class 파일
+
+test2.java 파일 밑에
+public class X
+class B
+
+### entry point : main() 메서드
+
+Test3.java
+ class Test3{}
+
+-> Test3.class 생성
+-> java Test3
+-> 오류! bcz) Java의 Entry point인 main() method는 public static void main(String[] Var){} 로 선언되어야 하기 때문!
+
+### Application argument
+
+$ java -classpath --- Test5 aaa bbb ccc
+-> JVM --생성-> "aaa" "bbb" "ccc" (String[] 스트링 배열)
+
+main(String[] args){  <- args에 "aaa","bbb","ccc"가 전달 됨
+	args[0] -> "aaa"
+	args[1] -> "bbb"
+	args[2] -> "ccc"
+}
+
+### Package
+
+- 클래스를 분류하는 문법
+- bitcamp-mystudy/    // GIT 저장소
+- ㅏ java-lang/    // Project 폴더 (root)
+- ㅣ  ㅏ app/    //main project
+- ㅣ  ㅣ  ㅏ src/    //
+- ㅣ  ㅣ  ㅣ  ㅏ main/    //
+- ㅣ  ㅣ  ㅣ  ㅣ  ㅏ java/    //source 폴더
+- ㅣ  ㅣ  ㅣ  ㅣ  ㅣ  ㅏ study/    //package
+- ㅣ  ㅣ  ㅣ  ㅣ  ㅣ  ㅣ  ㅏ lang/    //package
+- ㅣ  ㅣ  ㅣ  ㅣ  ㅣ  ㅣ  ㅣ  ㅏ Test.java
+- ㅣ  ㅣ  ㅣ  ㅣ  ㅣ  ㅣ  ㅣ  ㅏ
+
+Gradle 8.2 이전에는 Project 폴더 (ex. java-lang) 밑에 바로 src 폴더를 두었으나
+Gradle 8.2 이후 (현재 gradle 8.5 사용중) Project 폴더 내에 main project 파일을 두고 그 아래에 src 폴더가 생김 (sub project가 생길 것을 대비)
+
+main 밑에 java 폴더가 존재하는 이유는 최근 프로젝트는 하나의 언어만 사용하는 것이 아니라 성능의 향상을 위해서라면 기꺼이 다른 언어도 섞어 사용하기 떄문에 이를 대비하는 것 (polyglot Programmer)
+
+How to Test.java compile and run
+1. javac -d classpath study/lang/Test.java
+2. java -cp classpath study.lang.Test
+
+### 주석 (comment)
+
+1. traditional comment
+/* 
+-
+-
+-
+\*/
+
+2. end of line comment
+//
+
+### javadoc 주석
+/**
+	클래스에 대한 설명
+\*/
+class A {
+	/** 필드에 대한 설명 \*/
+	int a;
+	/** 메서드에 대한 설명 \*/
+	void m(){-}
+}
+
+-> javadoc 사용 시 javadoc 주석 추출해서 HTML API문서를 만듦
+
+API(Application Programming Interface) 문서?
+-> App. Programing 할 때 사용하는 Class나 Method의 사용 설명서
+
+- .class 파일에는 주석이 포함되지 않음
+
+### Annotation 주석
+- Java 컴파일러나 JVM에게 전달하는 특별한 정보
+
+@Data
+class A{
+	@Autowired int a;
+	@Override void m(){-}
+	-
+	-
+	-
+}
+
+- @ 로 시작하며, .class 파일에 포함될 수 있음
+
+### Literal
+ - 값을 표현한 것
+
+1. 수
+	1. 정수
+		1. 100 <- 4byte
+		2. 100L, 100l <- 8byte
+	2. 부동소수점
+		1. 3.14f, 3.14F <- 4byte
+		2. 3.14 <- 8byte
+2. 문자
+	1. '가','A','8','@','#' <- 2byte
+3. 논리값
+	1. true, false <- 4byte <- JVM엔 boolean 변수가 없지만, 대신 boolean 변수를 컴파일 시 JVM int로 변환하여 사용, 배열인 경우 1byte
+4. 문자열
+	1. "가", "abc", "123"
+5. null
+	- 주소 없음을 의미
+
+### Primitive Data Type
+- 자바에서 데이터를 구분하는 기본 분류
+
+1. 정수
+	1. byte (1 byte) : -128 ~ 127        ⎤ ==크기에 따라 literal을==
+	2. short (2 byte) : -32768 ~ 32767   ⎦ ==구분하는 문법이 없다==
+	3. int (4 byte) : 약 -21억 ~ 21억 ==*Default*==
+	4. long (8 byte) : 약  -922경 ~ 922경
+2. 부동소수점
+	1. float (4 byte)
+	2. double (8 byte) ==*Default*==
+3. 논리 - boolean (int 또는 byte)
+4. 문자 - char (2 byte) : 'A'
+5. 문자열
+
+### 문자 literal
+
+- 'A'
+- '\\u유니코드값' (역슬래시)
+	- 유니코드값 : 문자에 대해 2byte 숫자를 부여
+	- A = 0x0041
+	- B = 0x0042
+	- a = 0x0061
+	- b = 0x0062
+	- 가 = 0xAC00
+	- 각 = 0xAC01
+문자는 전기적 신호로 저장
+비트 신호로 저장
+비트 신호를 쉽게 표기하기 위해 2진수를 사용
+2진수를 좀 더 쉽게 표기하기 위해 16진수를 사용
+컴퓨터간에 저장의 일관성을 위해 문자를 저장하는 규칙을 정의
+-> character set (문자집합)
+
+### 문자 집합 ASCII (7bit)
+
+128 = 33의 출력 불가능 제어 문자 + 95개의 출력 가능한 문자 (대, 소문자 알파벳, 숫자, 32개의 특수 문자, 공백 문자)
+
+sp(공백) - 010_0000 (0x20)
+? - 011_1111 (0x3f)
+\= - 011_1101 (0x3d)
+% - 010_0101 (0x25)
+cr(cage return) - 000_1101 (0x0d)
+lf(line feed) - 000_1010 (0x0a)
+A - 100_0001 (0x41)
+B - 100_0010 (0x42)
+C - 100_0011 (0x43)
+.
+.
+a - 110_0001 (0x61)
+b - 110_0010 (0x62)
+c - 110_0011 (0x63)
+
+엔터 = 0x0d 0x0a (cr, lf) (위치 초기화, 개행)
+
+### 문자집합 
+
+ISO-8859-1 = ASCII(7bit) + a(alpha, 1bit)
+a(alpha) -> 8859-2,3,4,5,6 ~
+
+ISO-8859-1 + KOR (완성형 2350자) -> EUC-KR (16bit, 국제표준)
+EUC-JP
+EUC-CN
+
+MS949 (2byte, a.k.a cp949) = EUC-KR + a(alpha) = 11172자
+
+Unicode (4byte) 실제는 최대 21bit 사용
+국제표준
+한글, 영어 모두 2byte 사용
+자바에서 문자를 다룰 때 사용
+
+UTF-8 = Unicode 변형 
+
+URL 인코딩
+1. "가각간" 검색 (9byte)
+2. UTF-8 변환 EA B0 80 EA B0 81 EA B0 84 (16진수, 9byte)
+3. 문자로 변환 "%EA%B0%80%EA%B0%81%EA%B0%84" (27글자, 27byte)
+4. 코드로 변환 25 45 41 25 42 30 25 ~~~~
+
+### 숫자를 메모리에 저장
+
+1. sign-Magnitude
+부동소수점에서 가수부 저장 시 사용
+00001101 (13)
+10001101 (-13)
+
+2. 1's 보수
+00001101 (13)
+11110010 (-13)
+
+3. 2's 보수 
+정수를 저장할 때 사용하는 규칙
+00001101 (13)
+11110011 (-13)
+
+4. Excess-k
+부동소수점의 지수부 저장 시 사용
+bias 값을 더해서 저장
+1. k값 (bias값) 구하기
+K = 2<sup>(비트-1)</sup>-1 = 2<sup>(8-1)</sup>-1 = 2<sup>7</sup>-1 = 128-1 = 127
+128 + 127 = 255 -> 1111 1111
+  1 + 127 = 128 -> 1000 0000
+  0 + 127 = 127 -> 0111 1111
+ -1 + 127 = 126 -> 0111 1110
+ -127 + 127 = 0 -> 0000 0000
+ 13 + 127 = 130 -> 1000 1100
+-13 + 127 = 114 -> 0111 0010
+
+부동소수점을 메모리에 저장
+
+12.375 -> 1100.011
+정규화 1100.011 -> 1.100011 x 2<sup>3</sup> -> .100011 x 2<sup>3</sup>
+- 가수부 = 100011
+- 지수부 = 3 (11<sub>2</sub>)
+
+32bit (float)
+- 부호비트 1bit
+- 지수부 (excess-k) 8bit 
+	- 0000_0011 -> 3 + 127 -> 1000_0010
+- 가수부 (sign-magnitude) 23bit
+- 0 1000_0010 100_0110_0000_0000_0000_0000
+- 0100 0001 0100 0110 0000 0000 0000 0000
+- 41 46 00 00
+
+12 -> 1100
+0.375 -> 0.011
+
+0.375 * 2 = 0.75 -> 0
+0.75 * 2 = 1.5 -> 1
+0.5 * 2 = 1.0 -> 1
+
+### 값을 메모리에 저장
+
+문자 --문자집합 규칙-> 2진수 -> 메모리
+정수 --2의 보수 규칙-> 2진수 -> 메모리
+부동소수점 --IEEE-754규칙-> 2진수 -> 메모리
+색상 -> 2진수 -> 메모리
+소리 -> 2진수 -> 메모리
+값 -> 2진수 -> 메모리
+
+### 변수
+- 데이터를 저장하는 메모리
+- 변수 선언 -> 메모리를 준비시키는 명령문
+
+메모리타입(Data Type) 메모리명(변수명);
+
+메모리명(변수명) = 값;
+= : assignment operator (대입 연산자)
+
+- Primitive Data Type
+	- 정수
+		- byte (1)
+		- short (2)
+		- int (4)
+		- long (8)
+	- 부동소수점
+		- float (4)
+		- double (8)
+	- 논리
+		- boolean(4, 1)
+	- 문자
+		- char (2)
+- User Defined Data Type
+	- Class (클래스)
+
+Data Type의 역할 - 메모리 사용을 제어
+
+int i;
+float f;
+i = 30; // 실제 메모리 0x00_00_00_1E -> 00000000_00000000_00000000_00011110
+f = 30; // 실제 메모리 0x41_F0_00_00 -> 0 1000001_1 1110000_00000000_00000000
+
+### 개발도구와 프로젝트 폴더
+
+Project
+- java-lang/
+- ㅣ
+- ㅏ settings.gradle
+- ㅏ app/
+- ㅣ ㅏ .settings/
+- ㅣ ㅣ ㅏ 설정파일
+- ㅣ ㅏ .project
+- ㅣ ㅏ .classpath
+
+IntelliJ IDE
+- workspace
+
+Project를 IntelliJ IDE workspace에 import 하고싶다면, settings.gadle만 가져가면 됨
+근데 Eclipse IDE workspace에 import 하고싶다면, app내의 .settings/설정파일, .project, .classpath가 있어야만 eclipse가 프로젝트 폴더로 인식
+해당 파일들은 gradle로 만들 수 있음
+
+
+### GIT 저장소와 Gradle 프로젝트
+
+- git/
+	- bitcamp-mystudy/ <- GIT 저장소 폴더
+		- java-lang/
+		- myapp/
+		- .git/ <- GIT 백업
+
+- a/ <- gradle 프로젝트 폴더
+	- settings.gradle
+	- build.gradle
+	- pox.xml
+	- build.xml
+
+- b/ <- 메인 프로젝트 폴더
+	- settings.gradle
+	- app/ <- 서브 프로젝트 폴더
+		- build.gradle
+
+gradle 프로젝트 폴더에
+build.gradle 파일과 settings.gradle 파일이 같이 있고, app 폴더가 없다면 옛날 버전 gradle 프로젝트 폴더임
+
+### 부동소수점 메모리 크기와 값의 범위
+
+1. 4byte
+- 소수점을 빼고 숫자의 자릿수를 셌을 때, 7자리까지 거의 정확하게 저장됨
+
+2. 8byte
+- 15자리까지 거의 정확하게 저장된다.
+
+유효자릿수를 초과하면 값이 짤려서 들어갈 가능성이 높다.
+
+정확하게 말할 수 없다 -> 2진수로 변환하는 과정에서
+
+### 부동소수점 계산 시 주의
+
+float f1 = 32.17541f;
+float f2 = 23447.12f;
+float f3 = f1 + f2;
+
+==> 7자리 초과
+- 그래서 부동소수점은 기본으로 8byte 사용을 권장, 리터럴도 8byte일 때 접미사를 안붙임
+
+6 805 64693 27705 77196 23408 36696 90338 50880

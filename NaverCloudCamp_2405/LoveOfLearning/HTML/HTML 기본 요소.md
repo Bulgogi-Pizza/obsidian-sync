@@ -399,3 +399,152 @@ dt 태그에는 용어의 이름이 들어가고, dd 태그에는 해당 용어�
 
 	<dt>상추</dt> <dd>- 국화과의 한해살이 또는 두해살이풀</dd>
 </dl>
+~~~
+
+<hr>
+
+## HTML 테이블(Table)
+
+테이블이란 여러 종류의 데이터를 보기 좋게 정리하여 보여주는 표를 의미
+table 태그를 사용해 테이블 작성 가능
+
+table
+1. tr (table row) 태그는 테이블에서 열 구분
+2. th (table head) 태그는 각 열의 제목을 나타내며, 모든 내용은 자동으로 굵은 글씨에 가운데 정렬
+3. td (table data) 태그는 테이블의 열을 각각의 셀(cell)로 나누어 줌
+
+~~~html
+<table style="width:100%">
+	<tr style="background-color:lightgrey">
+		<th>참치</th>
+		<th>고래</th>
+	</tr>
+	<tr>
+		<td>상어</td>
+		<td>문어</td>
+	</tr>
+	<tr>
+		<td>오징어</td>
+		<td>고등어</td>
+	</tr>
+</table>
+~~~
+
+<table style="width:100%">
+	<tr style="background-color:lightgrey">
+		<th>참치</th>
+		<th>고래</th>
+	</tr>
+	<tr>
+		<td>상어</td>
+		<td>문어</td>
+	</tr>
+	<tr>
+		<td>오징어</td>
+		<td>고등어</td>
+	</tr>
+</table>
+
+CSS의 border 속성을 이용해 테이블에 테두리 표현 가능
+
+~~~html
+<style>
+	table, th, td { border: 1px solid black }
+</table>
+~~~
+
+table태그와 th태그, td태그가 모두 자신만의 테두리를 가지고 있기 때문에 위의 예제는 줄이 두 줄 나타남 이 때, border-collapse 속성을 사용하면 한 줄로 표현할 수 있음
+
+~~~html
+<style>
+	table, th, td { border: 1px solid black; border-collapse: collapse}
+</style>
+~~~
+
+<hr>
+
+### 테이블 열 합치기
+
+colspan 속성으로 테이블의 열 합칠 수 있음
+
+~~~html
+<table style="width:100%">
+	<tr>
+		<td>참치</td>
+		<td colspan="2">고래</td>
+	</tr>
+	<tr>
+		<td>상어</td>
+		<td>문어</td>
+		<td>꽁치</td>
+	<tr>
+</table>
+~~~
+
+<hr>
+
+### 테이블 행 합치기
+
+rowspan 속성으로 테이블의 행 합칠 수 있음
+
+~~~html
+<table style="width:100%">
+	<tr>
+		<td rowspan="2">상어</td>
+		<td>문어</td>
+		<td>꽁치</td>
+	</tr>
+	<tr>
+		<td>고등어</td>
+		<td>돌고래</td>
+	</tr>
+</table>
+~~~
+
+<hr>
+
+### 테이블의 열과 행 합치기
+
+colspan 속성과 rowspan 속성을 함께 사용하면, 더욱 복잡한 테이블도 표현할 수 있음
+
+~~~html
+<table style="width:100%">
+	<tr>
+		<td colspan="6">1</td>
+	</tr>
+	<tr>
+		<td colspan="6">2</td>
+	</tr>
+	<tr>
+		<td rowspan="3">3</td>
+		<td rowspan="3">4</td>
+		<td colspan="2">5</td>
+		<td>6</td>
+		<td>7</td>
+	</tr>
+	<tr>
+		<td colspan="3">8</td>
+		<td>9</td>
+	</tr>
+	<tr>
+		<td colspan="4">10</td>
+	</tr>
+</table>
+~~~
+
+<hr>
+
+### 테이블의 캡션(caption) 설정
+
+caption 태그를 사용하면 테이블 상단에 제목이나 짧은 설명을 붙일 수 있음
+
+~~~html
+<table style="width:100%">
+	<caption>해양 생물</caption>
+	<tr>
+		<td>참치</td>
+		<td>고래</td>
+		<td>날치</td>
+	</tr>
+</table>
+~~~
